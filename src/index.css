@@ -1,0 +1,22 @@
+/* Basic CSS reset so styling is consistent across browsers */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(135deg, #f4f6fb 0%, #e9edf5 100%);
+  color: #1f2430;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input, textarea {
+  font-family: inherit;
+}

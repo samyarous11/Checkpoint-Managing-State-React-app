@@ -1,0 +1,276 @@
+.app-container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+}
+
+/* ---------- Header ---------- */
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-header h1 {
+  font-size: 2rem;
+  color: #2b2f77;
+}
+
+.app-subtitle {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* ---------- Form ---------- */
+.task-form {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 4px 16px rgba(31, 36, 48, 0.08);
+  margin-bottom: 28px;
+}
+
+.task-form h2 {
+  font-size: 1.15rem;
+  margin-bottom: 16px;
+  color: #2b2f77;
+}
+
+.form-field {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 1.5px solid #d7dbe6;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+  transition: border-color 0.15s ease;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+.input-error {
+  border-color: #e0526b !important;
+}
+
+.error-text {
+  color: #e0526b;
+  font-size: 0.78rem;
+  margin-top: 4px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.08s ease, opacity 0.15s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background: #6366f1;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  border-radius: 6px;
+}
+
+.btn-edit {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.btn-edit:hover {
+  background: #e0e7ff;
+}
+
+.btn-delete {
+  background: #fdecef;
+  color: #b91c3c;
+}
+
+.btn-delete:hover {
+  background: #fbd9de;
+}
+
+/* ---------- Filter bar ---------- */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  background: #fff;
+  border: 1.5px solid #d7dbe6;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+
+.filter-btn:hover {
+  border-color: #6366f1;
+}
+
+.filter-active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+/* ---------- Task list ---------- */
+.task-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(31, 36, 48, 0.06);
+  border-left: 4px solid #6366f1;
+  transition: opacity 0.15s ease;
+}
+
+.task-item.task-completed {
+  border-left-color: #22c55e;
+  opacity: 0.72;
+}
+
+.task-checkbox-wrapper input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  margin-top: 4px;
+  accent-color: #6366f1;
+  cursor: pointer;
+}
+
+.task-content {
+  flex: 1;
+  cursor: pointer;
+}
+
+.task-name {
+  font-size: 1rem;
+  color: #1f2430;
+  margin-bottom: 4px;
+}
+
+.task-completed .task-name,
+.task-completed .task-description {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.task-description {
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.4;
+}
+
+.task-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 6px;
+}
+
+.status-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.status-active {
+  background: #eef2ff;
+  color: #4338ca;
+}
+
+.status-done {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* ---------- Empty state ---------- */
+.empty-state {
+  text-align: center;
+  color: #9ca3af;
+  padding: 30px 0;
+  font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+.app-footer {
+  text-align: center;
+  margin-top: 32px;
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 480px) {
+  .task-item {
+    flex-wrap: wrap;
+  }
+
+  .task-actions {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
